@@ -14,4 +14,9 @@ import lombok.Data;
 public class RequestDto<T> extends BaseDto {
     T requestPara;
     long requestId;
+
+    public RequestDto(T requestPara, long requestId) {
+        this.requestPara = requestPara;
+        this.requestId = requestId;
+    }
 }
